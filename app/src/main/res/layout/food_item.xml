@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_d_sp_rec_gray"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_px1">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/list_image"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_px300"
+        android:src="@mipmap/ic_launcher" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/list_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_px30"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_px34"
+        android:textStyle="bold"
+        tools:text="1111" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_px10"
+        android:text="¥ 22.2"
+        android:textColor="@color/c_cc3077"
+        android:textSize="@dimen/sp_px32"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/check_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_px30"
+        android:layout_marginTop="@dimen/dp_px10"
+        android:background="@color/c_cc3077"
+        android:drawablePadding="@dimen/dp_px10"
+        android:drawableRight="@mipmap/ic_me_more"
+        android:paddingBottom="@dimen/dp_px10"
+        android:paddingLeft="@dimen/dp_px20"
+        android:paddingRight="@dimen/dp_px20"
+        android:paddingTop="@dimen/dp_px10"
+        android:text="查看商品"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_px32"
+        android:textStyle="bold" />
+
+</LinearLayout>

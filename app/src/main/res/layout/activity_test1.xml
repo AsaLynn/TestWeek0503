@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_navbar_red"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:titleTextColor="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="收藏"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_px28" />
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/product_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
